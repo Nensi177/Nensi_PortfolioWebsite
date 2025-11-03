@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test - Nensi Thummar</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000021;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-container {
+            max-width: 375px;
+            margin: 0 auto;
+            border: 2px solid #00ffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .name-test {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.1;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #00ffff;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .project-demo {
+            width: 100%;
+            height: 200px;
+            background: rgba(0, 255, 255, 0.05);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .project-demo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+        }
+        .overlay-demo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.9), rgba(255, 0, 255, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            color: white;
+            font-weight: bold;
+        }
+        .project-demo:hover .overlay-demo {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h2>Mobile Responsiveness Test</h2>
+        
+        <div class="name-test">
+            Hi, I'm <span class="highlight">Nensi Thummar</span>
+        </div>
+        
+        <p>✅ Name should be fully visible on mobile screens</p>
+        
+        <div class="project-demo">
+            <div class="overlay-demo">
+                New Hover Effect!
+            </div>
+        </div>
+        
+        <p>✅ Hover over the box above to see the new slide-up effect</p>
+        
+        <p><strong>Screen width simulation:</strong> 375px (iPhone)</p>
+    </div>
+</body>
+</html>
