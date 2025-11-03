@@ -37,5 +37,4 @@ Simple contact form and social media links.
 - How to upload a project on GitHub  
 
 ## How to View
-Just open the `index.html` file in your browser.  
-I’m still learning and improving it step by step.
+live link : https://nensi177.github.io/Nensi_PortfolioWebsite/
